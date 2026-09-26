@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "u2-bps-nonlinear-constraint"
+version = "0.1.0"
+description = "Numerical tests of the U(2) BPS counting / nonlinear-constraint relation"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.26",
+  "pandas>=2.0",
+  "scipy>=1.11",
+  "matplotlib>=3.8",
+  "numba>=0.60",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
