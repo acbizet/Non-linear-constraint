@@ -16,6 +16,10 @@ on:
         default: '50'
         type: string
 
+permissions:
+  contents: write
+
+
 jobs:
   generate:
     runs-on: ubuntu-latest
